@@ -1,0 +1,70 @@
+#projectPage {
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .projectTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .projectDesc {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  
+  .projectDesc2 {
+    color: greenyellow;
+  }
+  
+  .projectImgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 65rem;
+  }
+  
+  .projectRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  
+  .projectImg {
+    object-fit: cover;
+    height: 17rem;
+    width: calc(33.33% - 1rem); /* Three images in a row with margin in between */
+    margin: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  .dsa-img {
+    object-fit: cover;
+    height: 17rem; /* Set the height to match the other images */
+    width: calc(33.33% - 1rem); /* Three images in a row with margin in between */
+    margin: 0.5rem;
+    border-radius: 1rem;
+  }
+
+@media screen and (max-width:900px) {
+    .projectImg{
+        height: 10rem;
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .projectImg{
+        height: 7rem;
+        width: 20vw;
+    }
+}
+  
